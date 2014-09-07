@@ -15,10 +15,11 @@ class Question {
     var datePosted : String
     var emailAddress : String
     var status : Int
-    var tags : [String]
-    var location : [[String : String]] //array of string/string dict
+    var tags : NSArray //how do I make this a normal array?
+    var location : String
+    //var location : [[String : String]] //array of string/string dict
     
-    init(var name: String, var question: String, var date: String, var email: String, var stat: Int, var tagArray: [String], var locationArray: [[String : String]])
+    init(var name: String, var question: String, var date: String, var email: String, var stat: Int, var tagArray: NSArray, var locationArray: String)
     {
         self.posterName = name
         self.questionText = question

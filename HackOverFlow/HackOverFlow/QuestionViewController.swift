@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
 class QuestionViewController: UIViewController {
-    var dict: [String: String]!
+    var questions: [Question]!
+    
+    override func viewDidLoad() {
+        NSLog(self.questions[0].posterName)
+        
+    }
+    
+    
+    //println("say my name")
+    //println(questions)
 }

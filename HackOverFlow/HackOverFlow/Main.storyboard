@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="950" y="169"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="r2b-1T-ApC">
             <objects>
-                <viewController id="rCd-t3-0i8" sceneMemberID="viewController">
+                <viewController id="rCd-t3-0i8" customClass="QuestionViewController" customModule="HackOverFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MzK-zy-c5p"/>
                         <viewControllerLayoutGuide type="bottom" id="1Y7-27-5WQ"/>
@@ -78,8 +78,9 @@
         <!--Navigation Controller-->
         <scene sceneID="0rJ-Ka-jrk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="w2g-RS-iXA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w2g-RS-iXA" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wWf-Hr-NSf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

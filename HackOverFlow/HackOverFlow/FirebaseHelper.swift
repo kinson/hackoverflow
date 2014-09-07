@@ -11,16 +11,16 @@ import Foundation
 class FirebaseHelper {
     var myRootRef: Firebase
 
-    let fetchHandler: [[String: String]] -> Void //clojure that returns nothing
+    let fetchHandler: [Question] -> Void //clojure that returns nothing
     
-    private var multiDataPrivate = [[String: String]]() //private array of dicts (to prevent modifying the same array on multiple threads)
+    private var multiDataPrivate = [Question]() //private array of dicts (to prevent modifying the same array on multiple threads)
     
     private var firebaseObservationHandle: UInt? //what is UInt?
     
     let queue = dispatch_queue_create("com.firebasehelp.queue", DISPATCH_QUEUE_SERIAL)
     
     
-    init(fetchHandler: [[String: String]] -> Void) {
+    init(fetchHandler: [Question] -> Void) {
         myRootRef = Firebase(url: "https://hackoverflow.firebaseio.com/samsstuff")
         
         self.fetchHandler = fetchHandler
@@ -44,18 +44,19 @@ class FirebaseHelper {
                 let questionText = snapshot.value["questionText"] as String
                 let datePosted = snapshot.value["datePosted"] as String
                 let emailAddress = snapshot.value["emailAddress"] as String
-                //let status = snapshot.value["status"] as Int
+                let status = snapshot.value["status"] as Int
+                let tags = snapshot.value["tags"] as NSArray
+                let location = snapshot.value["location"] as String
                 
-                //let tags = snapshot.value["tags"] as NSArray
-                
-                let tableData = [
+                let tableData = Question(name: posterName, question: questionText, date: datePosted, email: emailAddress, stat: status, tagArray: tags, locationArray: location)
+                /*[
                     "posterName": posterName,
                     "questionText": questionText,
                     "datePosted": datePosted,
                     "emailAddress" : emailAddress
                     //"status" : status
                     //how do I get an array?
-                ]
+                ]*/
                 
                 dispatch_async(strongSelf.queue) {
                     strongSelf.multiDataPrivate += [tableData]

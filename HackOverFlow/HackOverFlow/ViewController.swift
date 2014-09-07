@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var elements = [[String: String]]()
+    var elements = [Question]()
     
     var firebasehelp : FirebaseHelper! //implicitly unwrapped optional
     
@@ -68,12 +68,12 @@ class ViewController: UITableViewController {
         
         
         cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 10)
-        cell.textLabel!.text = rowData["questionText"]!
+        cell.textLabel!.text = rowData.questionText
         
         
         //change text color of detail label
         //cell.detailTextLabel!.textColor = UIColor(red: CGFloat(228), green: CGFloat(233), blue: CGFloat(238), alpha: CGFloat(1.0))
-        cell.detailTextLabel!.text = rowData["posterName"]!
+        cell.detailTextLabel!.text = rowData.posterName
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -87,7 +87,7 @@ class ViewController: UITableViewController {
         if segue.identifier == "toQuestionSegue" {
            let destinationViewController = segue.destinationViewController as QuestionViewController
             
-            destinationViewController.dict = sender as [String: String]
+            destinationViewController.questions = [sender as Question]
         }
     }
     
