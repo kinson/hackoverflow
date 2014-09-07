@@ -172,15 +172,24 @@ body,
 	font-weight: 100;
 }
 
+.dashboardButton:hover {
+	background-color: #272727;
+}
+
 .getHelpButton {
 	background-color: #2BB197;
 	margin-top: 50px;
+	margin-bottom: 30px;
 	padding:30px;
 	border:none;
 	color:white;
 	font-size:1.5em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
+}
+
+.getHelpButton:hover {
+	background-color: #029E80;
 }
 
 .sortText{
@@ -212,7 +221,7 @@ body,
 }
 
 .meText {
-	padding-top:10px;
+	padding-top:60px;
 	padding-bottom:0px;
 	margin-bottom:10px;
 	font-size:2em;

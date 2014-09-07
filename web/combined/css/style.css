@@ -60,3 +60,12 @@ body {
     background-size: 70px 50px;
     z-index: 5;
 }
+
+.dropzone{
+  color:black;
+  background-image: url("../img/dropimages.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  width:100%;
+  height:200px;
+}
