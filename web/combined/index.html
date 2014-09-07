@@ -100,14 +100,14 @@
 			'</div></div><div class="flip_image flip_image'+currentCardNum,
 			' on_front"></div>',
 			'<div class="garbage_image"></div><img src="./img/IMG_5000.jpg"/><div class="price_info_box">',
-			Math.floor(miliseconds/60000),
+			Math.floor(miliseconds/60000%61),
 			'min</div></div></div><div class="face back"><div class="shadow">',
 	        '<div class="card_back_title">',
 			'</div><div class="offer_help_button">OFFER HELP</div><div class="more_info_button">MORE INFO</div>',
 			'<div class="flip_image flip_image'+currentCardNum,
 			'on_back"></div><div class="garbage_image"></div>',
 			'<img src="./img/IMG_5000.jpg"/><div class="price_info_box">',
-			Math.floor(miliseconds/60000),
+			Math.floor(miliseconds/60000%61),
 			'min</div></div></div></div></div>'
 			].join('\n');
 
@@ -140,7 +140,7 @@
 			
 			<nav class="st-menu st-effect-2" id="menu-2">
 				<div style="text-align:center">
-					<button class="dashboardButton">HELP PEOPLE</button>
+					<button class="md-trigger dashboardButton" data-modal="modal-7">HELP PEOPLE</button>
 				</div>
 
 				<p class="sortText center"> SEARCH REQUEST FOR HELP</p> 
@@ -221,6 +221,36 @@
 			</div><!-- /st-pusher -->
 		</div><!-- /st-container -->
 
+		<div class="md-modal md-effect-7" id="modal-7">
+			<div class="md-content">
+				
+				<div>
+					<form action="" method="post" class="bootstrap-frm">
+					<h1>Get notified when people need help<span>Please fill all the texts in the fields.</span></h1>
+					<p>
+						<label>
+							<span>Your Name :</span><input id="helpName" type="text" name="helpName" placeholder="Your Full Name">
+						</label>
+						<label>
+							<span>Your Phone :</span><input id="phoneNumber" type="text" name="phoneNumber" placeholder="Valid Phone Number">
+						</label>
+						
+						<label>
+							<span>Help With :</span><input id="helpTags" type="text" name="helpTags" placeholder="(EX: CSS, HTML, JavaScript">
+						</label>
+						
+						<label>
+							<span>&nbsp;</span><input type="button" onclick="notifyOnHelpNeeded()" class="button md-close" value="Send">
+							<input type="button" class="md-close button" value="Close">
+						</label>
+
+					</p>
+					
+					
+				</form>
+				</div>
+			</div>
+		</div>
 
 		<div class="md-modal md-effect-12" id="modal-12">
 			<div class="md-content">
