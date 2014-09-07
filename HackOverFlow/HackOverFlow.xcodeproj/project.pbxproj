@@ -22,6 +22,7 @@
 		22CEBFEF19BC35DA004B6949 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */; };
 		22CEBFF119BC3A12004B6949 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBFF019BC3A12004B6949 /* Question.swift */; };
 		22CEBFF319BC5A0C004B6949 /* user_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22CEBFF219BC5A0C004B6949 /* user_image.jpg */; };
+		22CEBFF519BC87B8004B6949 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22CEBFF419BC87B8004B6949 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		22CEBFF019BC3A12004B6949 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		22CEBFF219BC5A0C004B6949 /* user_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user_image.jpg; sourceTree = "<group>"; };
+		22CEBFF419BC87B8004B6949 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				22CEBFF219BC5A0C004B6949 /* user_image.jpg */,
 				22CEBFF019BC3A12004B6949 /* Question.swift */,
 				22385DC719BBE9450007CB7F /* FirebaseHelper.swift */,
+				22CEBFF419BC87B8004B6949 /* background.jpg */,
 				22385DC519BBE8BC0007CB7F /* Main.storyboard */,
 				22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */,
 				22385D9C19BBE16B0007CB7F /* Images.xcassets */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22385D9D19BBE16B0007CB7F /* Images.xcassets in Resources */,
+				22CEBFF519BC87B8004B6949 /* background.jpg in Resources */,
 				22385DC619BBE8BC0007CB7F /* Main.storyboard in Resources */,
 				22CEBFF319BC5A0C004B6949 /* user_image.jpg in Resources */,
 			);

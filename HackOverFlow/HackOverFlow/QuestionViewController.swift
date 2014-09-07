@@ -41,6 +41,8 @@ class QuestionViewController: UIViewController {
         }
         tagsLabel.text = subString
         
+        //self.view.backgroundColor = UIColor(patternImage: "background.jpg", alpha: 1.0,)
+        //self.view.backgroundColor!(UIColor.blackColor())
         
         
         
