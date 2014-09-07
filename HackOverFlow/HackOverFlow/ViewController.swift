@@ -10,7 +10,33 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    @IBOutlet weak var appsTableView: UITableView!
+    var elements = [[String: String]]()
+    
+    var firebasehelp : FirebaseHelper! //implicitly unwrapped optional
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if firebasehelp == nil {
+            firebasehelp = FirebaseHelper { data in
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.elements = data
+                    
+                    self.tableView.reloadData()
+                }
+            }
+        }
+        
+        firebasehelp.startObserving()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        firebasehelp.stopObserving()
+    }
+    
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +50,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return elements.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -37,14 +63,17 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        //get dictionary for individual row
+        var rowData: NSDictionary = elements[indexPath.row] as NSDictionary
         
         
         cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 10)
-        cell.textLabel!.text = "I'm having this, that and the other problem with my code. It doesn't compile when I put a banana in the money stand."
+        cell.textLabel!.text = rowData["questionText"] as NSString
+        
         
         //change text color of detail label
         //cell.detailTextLabel!.textColor = UIColor(red: CGFloat(228), green: CGFloat(233), blue: CGFloat(238), alpha: CGFloat(1.0))
-        cell.detailTextLabel!.text = "C++, java, bananas, dogs"
+        cell.detailTextLabel!.text = rowData["posterName"] as NSString
     }
     
 }
