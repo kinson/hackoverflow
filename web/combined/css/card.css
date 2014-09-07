@@ -143,8 +143,7 @@ img {
 }
 
   .card_back_title {
-    position:absolute;
-    top:40px;
+    position:relative;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -152,6 +151,7 @@ img {
     color:white;
 
   }
+
 
 
 
