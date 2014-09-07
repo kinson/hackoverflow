@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22385D9619BBE16B0007CB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22385D9519BBE16B0007CB7F /* AppDelegate.swift */; };
+		22385D9819BBE16B0007CB7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22385D9719BBE16B0007CB7F /* ViewController.swift */; };
+		22385D9D19BBE16B0007CB7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22385D9C19BBE16B0007CB7F /* Images.xcassets */; };
+		22385DA919BBE16B0007CB7F /* HackOverFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22385DA819BBE16B0007CB7F /* HackOverFlowTests.swift */; };
+		22385DB319BBE1BD0007CB7F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DB219BBE1BD0007CB7F /* libicucore.dylib */; };
+		22385DB519BBE1C50007CB7F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DB419BBE1C50007CB7F /* libc++.dylib */; };
+		22385DB719BBE1CF0007CB7F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DB619BBE1CF0007CB7F /* CFNetwork.framework */; };
+		22385DB919BBE1D70007CB7F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DB819BBE1D70007CB7F /* Security.framework */; };
+		22385DBB19BBE1E20007CB7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DBA19BBE1E20007CB7F /* SystemConfiguration.framework */; };
+		22385DBD19BBE2510007CB7F /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DBC19BBE2510007CB7F /* Firebase.framework */; };
+		22385DC619BBE8BC0007CB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22385DC519BBE8BC0007CB7F /* Main.storyboard */; };
+		22385DC819BBE9450007CB7F /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22385DC719BBE9450007CB7F /* FirebaseHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22385DA319BBE16B0007CB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22385D8819BBE16B0007CB7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22385D8F19BBE16B0007CB7F;
+			remoteInfo = HackOverFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22385D9019BBE16B0007CB7F /* HackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22385D9419BBE16B0007CB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22385D9519BBE16B0007CB7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22385D9719BBE16B0007CB7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22385D9C19BBE16B0007CB7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22385DA219BBE16B0007CB7F /* HackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22385DA719BBE16B0007CB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22385DA819BBE16B0007CB7F /* HackOverFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackOverFlowTests.swift; sourceTree = "<group>"; };
+		22385DB219BBE1BD0007CB7F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		22385DB419BBE1C50007CB7F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		22385DB619BBE1CF0007CB7F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22385DB819BBE1D70007CB7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22385DBA19BBE1E20007CB7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22385DBC19BBE2510007CB7F /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		22385DBE19BBE2690007CB7F /* HackOverFlow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackOverFlow-Bridging-Header.h"; sourceTree = "<group>"; };
+		22385DC519BBE8BC0007CB7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		22385DC719BBE9450007CB7F /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22385D8D19BBE16B0007CB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22385DBB19BBE1E20007CB7F /* SystemConfiguration.framework in Frameworks */,
+				22385DBD19BBE2510007CB7F /* Firebase.framework in Frameworks */,
+				22385DB919BBE1D70007CB7F /* Security.framework in Frameworks */,
+				22385DB719BBE1CF0007CB7F /* CFNetwork.framework in Frameworks */,
+				22385DB519BBE1C50007CB7F /* libc++.dylib in Frameworks */,
+				22385DB319BBE1BD0007CB7F /* libicucore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22385D9F19BBE16B0007CB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22385D8719BBE16B0007CB7F = {
+			isa = PBXGroup;
+			children = (
+				22385DBA19BBE1E20007CB7F /* SystemConfiguration.framework */,
+				22385DB819BBE1D70007CB7F /* Security.framework */,
+				22385DB619BBE1CF0007CB7F /* CFNetwork.framework */,
+				22385DB419BBE1C50007CB7F /* libc++.dylib */,
+				22385DBC19BBE2510007CB7F /* Firebase.framework */,
+				22385DB219BBE1BD0007CB7F /* libicucore.dylib */,
+				22385D9219BBE16B0007CB7F /* HackOverFlow */,
+				22385DA519BBE16B0007CB7F /* HackOverFlowTests */,
+				22385D9119BBE16B0007CB7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22385D9119BBE16B0007CB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22385D9019BBE16B0007CB7F /* HackOverFlow.app */,
+				22385DA219BBE16B0007CB7F /* HackOverFlowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22385D9219BBE16B0007CB7F /* HackOverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				22385D9519BBE16B0007CB7F /* AppDelegate.swift */,
+				22385D9719BBE16B0007CB7F /* ViewController.swift */,
+				22385DC719BBE9450007CB7F /* FirebaseHelper.swift */,
+				22385DC519BBE8BC0007CB7F /* Main.storyboard */,
+				22385D9C19BBE16B0007CB7F /* Images.xcassets */,
+				22385D9319BBE16B0007CB7F /* Supporting Files */,
+				22385DBE19BBE2690007CB7F /* HackOverFlow-Bridging-Header.h */,
+			);
+			path = HackOverFlow;
+			sourceTree = "<group>";
+		};
+		22385D9319BBE16B0007CB7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22385D9419BBE16B0007CB7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22385DA519BBE16B0007CB7F /* HackOverFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				22385DA819BBE16B0007CB7F /* HackOverFlowTests.swift */,
+				22385DA619BBE16B0007CB7F /* Supporting Files */,
+			);
+			path = HackOverFlowTests;
+			sourceTree = "<group>";
+		};
+		22385DA619BBE16B0007CB7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22385DA719BBE16B0007CB7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22385D8F19BBE16B0007CB7F /* HackOverFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22385DAC19BBE16B0007CB7F /* Build configuration list for PBXNativeTarget "HackOverFlow" */;
+			buildPhases = (
+				22385D8C19BBE16B0007CB7F /* Sources */,
+				22385D8D19BBE16B0007CB7F /* Frameworks */,
+				22385D8E19BBE16B0007CB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackOverFlow;
+			productName = HackOverFlow;
+			productReference = 22385D9019BBE16B0007CB7F /* HackOverFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22385DA119BBE16B0007CB7F /* HackOverFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22385DAF19BBE16B0007CB7F /* Build configuration list for PBXNativeTarget "HackOverFlowTests" */;
+			buildPhases = (
+				22385D9E19BBE16B0007CB7F /* Sources */,
+				22385D9F19BBE16B0007CB7F /* Frameworks */,
+				22385DA019BBE16B0007CB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22385DA419BBE16B0007CB7F /* PBXTargetDependency */,
+			);
+			name = HackOverFlowTests;
+			productName = HackOverFlowTests;
+			productReference = 22385DA219BBE16B0007CB7F /* HackOverFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22385D8819BBE16B0007CB7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Samuel Hunter";
+				TargetAttributes = {
+					22385D8F19BBE16B0007CB7F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					22385DA119BBE16B0007CB7F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 22385D8F19BBE16B0007CB7F;
+					};
+				};
+			};
+			buildConfigurationList = 22385D8B19BBE16B0007CB7F /* Build configuration list for PBXProject "HackOverFlow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22385D8719BBE16B0007CB7F;
+			productRefGroup = 22385D9119BBE16B0007CB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22385D8F19BBE16B0007CB7F /* HackOverFlow */,
+				22385DA119BBE16B0007CB7F /* HackOverFlowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22385D8E19BBE16B0007CB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22385D9D19BBE16B0007CB7F /* Images.xcassets in Resources */,
+				22385DC619BBE8BC0007CB7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22385DA019BBE16B0007CB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22385D8C19BBE16B0007CB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22385D9819BBE16B0007CB7F /* ViewController.swift in Sources */,
+				22385DC819BBE9450007CB7F /* FirebaseHelper.swift in Sources */,
+				22385D9619BBE16B0007CB7F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22385D9E19BBE16B0007CB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22385DA919BBE16B0007CB7F /* HackOverFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22385DA419BBE16B0007CB7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22385D8F19BBE16B0007CB7F /* HackOverFlow */;
+			targetProxy = 22385DA319BBE16B0007CB7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22385DAA19BBE16B0007CB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22385DAB19BBE16B0007CB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22385DAD19BBE16B0007CB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HackOverFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackOverFlow/HackOverFlow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22385DAE19BBE16B0007CB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HackOverFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackOverFlow/HackOverFlow-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		22385DB019BBE16B0007CB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackOverFlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackOverFlow.app/HackOverFlow";
+			};
+			name = Debug;
+		};
+		22385DB119BBE16B0007CB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackOverFlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackOverFlow.app/HackOverFlow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22385D8B19BBE16B0007CB7F /* Build configuration list for PBXProject "HackOverFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22385DAA19BBE16B0007CB7F /* Debug */,
+				22385DAB19BBE16B0007CB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22385DAC19BBE16B0007CB7F /* Build configuration list for PBXNativeTarget "HackOverFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22385DAD19BBE16B0007CB7F /* Debug */,
+				22385DAE19BBE16B0007CB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22385DAF19BBE16B0007CB7F /* Build configuration list for PBXNativeTarget "HackOverFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22385DB019BBE16B0007CB7F /* Debug */,
+				22385DB119BBE16B0007CB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22385D8819BBE16B0007CB7F /* Project object */;
+}
