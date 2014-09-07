@@ -21,7 +21,7 @@ class FirebaseHelper {
     
     
     init(fetchHandler: [Question] -> Void) {
-        myRootRef = Firebase(url: "https://hackoverflow.firebaseio.com/samsstuff")
+        myRootRef = Firebase(url: "https://hackoverflow.firebaseio.com/austinsQuestions")
         
         self.fetchHandler = fetchHandler
         
@@ -37,16 +37,17 @@ class FirebaseHelper {
     }
     
     func startObserving() {
+        multiDataPrivate.removeAll()
         // TODO: look at closure capture lists and what a strong reference cycle is (and how to break one like we're doing here!)
         firebaseObservationHandle = myRootRef.observeEventType(.ChildAdded, withBlock: { [weak self] snapshot in
             if let strongSelf = self {
                 let posterName = snapshot.value["posterName"] as String
-                let questionText = snapshot.value["questionText"] as String
-                let datePosted = snapshot.value["datePosted"] as String
+                let questionText = snapshot.value["question"] as String
+                let datePosted = snapshot.value["datePosted"] as Int
                 let emailAddress = snapshot.value["emailAddress"] as String
                 let status = snapshot.value["status"] as Int
                 let tags = snapshot.value["tags"] as NSArray
-                let location = snapshot.value["location"] as String
+                let location = snapshot.value["location"] as NSArray
                 
                 let tableData = Question(name: posterName, question: questionText, date: datePosted, email: emailAddress, stat: status, tagArray: tags, locationArray: location)
                 /*[

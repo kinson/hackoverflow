@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HackOverFlow/ViewController.swift"
-            timestampString = "431763070.702748"
+            timestampString = "431782786.490738"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HackOverFlow/QuestionViewController.swift"
-            timestampString = "431772012.220709"
+            timestampString = "431779702.294152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "QuestionViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackOverFlow/FirebaseHelper.swift"
+            timestampString = "431783495.696396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "startObserving()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackOverFlow/FirebaseHelper.swift"
+            timestampString = "431783495.696396"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "startObserving()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackOverFlow/ViewController.swift"
+            timestampString = "431782907.070519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackOverFlow/ViewController.swift"
+            timestampString = "431782997.759291"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>

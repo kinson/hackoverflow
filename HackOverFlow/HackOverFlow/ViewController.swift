@@ -50,31 +50,40 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        println(elements.count)
         return elements.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
+        let cell = tableView.dequeueReusableCellWithIdentifier("MyTestCell", forIndexPath: indexPath) as UITableViewCell
         
-        //cell.textLabel.text = "Row #\(indexPath.row)"
-        //cell.detailTextLabel.text = "Subtitle #\(indexPath.row)"
-        
-        return tableView.dequeueReusableCellWithIdentifier("MyTestCell", forIndexPath: indexPath) as UITableViewCell
-    }
-    
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         //get dictionary for individual row
         var rowData = elements[indexPath.row]
         
         
-        cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 10)
+        cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 14)
         cell.textLabel!.text = rowData.questionText
+        
+        cell.detailTextLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 10)
         
         
         //change text color of detail label
         //cell.detailTextLabel!.textColor = UIColor(red: CGFloat(228), green: CGFloat(233), blue: CGFloat(238), alpha: CGFloat(1.0))
-        cell.detailTextLabel!.text = rowData.posterName
+        var subString = ""
+        for i in 0...(rowData.tags.count-1)
+        {
+            var oneTag = rowData.tags[i] as String
+            subString += ((oneTag) + ((i != rowData.tags.count-1) ? ", " : ""))
+        }
+        cell.detailTextLabel!.text = subString
+        
+        return cell
+        
     }
+    
+    /*override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }*/
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var rowData = elements[indexPath.row]

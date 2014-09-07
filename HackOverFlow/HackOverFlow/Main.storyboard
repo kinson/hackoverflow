@@ -66,14 +66,139 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd8-z8-v9x">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="330" width="55" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="1" y="320" width="55" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFE-GI-Wqo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="330" width="50" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="320" width="50" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZc-CE-RXs">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="352" width="234" height="80"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="320" width="234" height="101"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJc-Ig-XkT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="355" width="153" height="73"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="1" y="345" width="153" height="51"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-Vb-V58">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="205" width="90" height="43"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="1" y="168" width="308" height="43"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZN-mR-1rv" userLabel="jjjj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="230" width="326" height="79"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="2" y="190" width="348" height="57"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted By:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20k-22-PEv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="79" width="110" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="79" width="110" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMY-Nv-Cbr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="104" width="228" height="63"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="108" width="214" height="42"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kd8-z8-v9x"/>
+                                <exclude reference="QFE-GI-Wqo"/>
+                                <exclude reference="QZc-CE-RXs"/>
+                                <exclude reference="WJc-Ig-XkT"/>
+                                <exclude reference="c1d-Vb-V58"/>
+                                <exclude reference="oZN-mR-1rv"/>
+                                <exclude reference="20k-22-PEv"/>
+                                <exclude reference="RMY-Nv-Cbr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Kd8-z8-v9x"/>
+                                <include reference="QFE-GI-Wqo"/>
+                                <include reference="QZc-CE-RXs"/>
+                                <include reference="WJc-Ig-XkT"/>
+                                <include reference="c1d-Vb-V58"/>
+                                <include reference="oZN-mR-1rv"/>
+                                <include reference="20k-22-PEv"/>
+                                <include reference="RMY-Nv-Cbr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="K41-71-HZF"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="oZN-mR-1rv" id="OU6-ce-hlY"/>
+                        <outlet property="statusLabel" destination="WJc-Ig-XkT" id="iGE-cq-Qr3"/>
+                        <outlet property="submittedLabel" destination="RMY-Nv-Cbr" id="gHc-q4-jjZ"/>
+                        <outlet property="tagsLabel" destination="QZc-CE-RXs" id="EYj-9v-4yD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45H-pS-eac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1634" y="169"/>
+            <point key="canvasLocation" x="1633.5" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0rJ-Ka-jrk">
