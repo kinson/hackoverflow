@@ -40,6 +40,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="K2T-lN-icw"/>
+                    <connections>
+                        <segue destination="rCd-t3-0i8" kind="push" identifier="toQuestionSegue" id="7FL-2F-RPb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gA-Vs-62y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K41-71-HZF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45H-pS-eac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -44,7 +44,7 @@ class FirebaseHelper {
                 let questionText = snapshot.value["questionText"] as String
                 let datePosted = snapshot.value["datePosted"] as String
                 let emailAddress = snapshot.value["emailAddress"] as String
-                let status = snapshot.value["status"] as String
+                //let status = snapshot.value["status"] as Int
                 
                 //let tags = snapshot.value["tags"] as NSArray
                 
@@ -52,8 +52,8 @@ class FirebaseHelper {
                     "posterName": posterName,
                     "questionText": questionText,
                     "datePosted": datePosted,
-                    "emailAddress" : emailAddress,
-                    "status" : status
+                    "emailAddress" : emailAddress
+                    //"status" : status
                     //how do I get an array?
                 ]
                 

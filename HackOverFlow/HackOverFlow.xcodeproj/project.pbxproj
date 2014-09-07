@@ -19,6 +19,8 @@
 		22385DBD19BBE2510007CB7F /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22385DBC19BBE2510007CB7F /* Firebase.framework */; };
 		22385DC619BBE8BC0007CB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22385DC519BBE8BC0007CB7F /* Main.storyboard */; };
 		22385DC819BBE9450007CB7F /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22385DC719BBE9450007CB7F /* FirebaseHelper.swift */; };
+		22CEBFEF19BC35DA004B6949 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */; };
+		22CEBFF119BC3A12004B6949 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBFF019BC3A12004B6949 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		22385DBE19BBE2690007CB7F /* HackOverFlow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackOverFlow-Bridging-Header.h"; sourceTree = "<group>"; };
 		22385DC519BBE8BC0007CB7F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		22385DC719BBE9450007CB7F /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		22CEBFF019BC3A12004B6949 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 			children = (
 				22385D9519BBE16B0007CB7F /* AppDelegate.swift */,
 				22385D9719BBE16B0007CB7F /* ViewController.swift */,
+				22CEBFF019BC3A12004B6949 /* Question.swift */,
 				22385DC719BBE9450007CB7F /* FirebaseHelper.swift */,
 				22385DC519BBE8BC0007CB7F /* Main.storyboard */,
+				22CEBFEE19BC35DA004B6949 /* QuestionViewController.swift */,
 				22385D9C19BBE16B0007CB7F /* Images.xcassets */,
 				22385D9319BBE16B0007CB7F /* Supporting Files */,
 				22385DBE19BBE2690007CB7F /* HackOverFlow-Bridging-Header.h */,
@@ -237,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CEBFF119BC3A12004B6949 /* Question.swift in Sources */,
 				22385D9819BBE16B0007CB7F /* ViewController.swift in Sources */,
 				22385DC819BBE9450007CB7F /* FirebaseHelper.swift in Sources */,
+				22CEBFEF19BC35DA004B6949 /* QuestionViewController.swift in Sources */,
 				22385D9619BBE16B0007CB7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +438,7 @@
 				22385DAE19BBE16B0007CB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22385DAF19BBE16B0007CB7F /* Build configuration list for PBXNativeTarget "HackOverFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +447,7 @@
 				22385DB119BBE16B0007CB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

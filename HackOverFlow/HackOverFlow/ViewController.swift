@@ -64,17 +64,34 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         //get dictionary for individual row
-        var rowData: NSDictionary = elements[indexPath.row] as NSDictionary
+        var rowData = elements[indexPath.row]
         
         
         cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size: 10)
-        cell.textLabel!.text = rowData["questionText"] as NSString
+        cell.textLabel!.text = rowData["questionText"]!
         
         
         //change text color of detail label
         //cell.detailTextLabel!.textColor = UIColor(red: CGFloat(228), green: CGFloat(233), blue: CGFloat(238), alpha: CGFloat(1.0))
-        cell.detailTextLabel!.text = rowData["posterName"] as NSString
+        cell.detailTextLabel!.text = rowData["posterName"]!
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var rowData = elements[indexPath.row]
+        
+        performSegueWithIdentifier("toQuestionSegue", sender: rowData) //
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toQuestionSegue" {
+           let destinationViewController = segue.destinationViewController as QuestionViewController
+            
+            destinationViewController.dict = sender as [String: String]
+        }
+    }
+    
+    
     
 }
 
